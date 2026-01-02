@@ -1,0 +1,168 @@
+/* IMPORTS: Google Fonts for that cool aesthetic */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
+
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* VIBRANT ANIMATED BACKGROUND */
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #8E2DE2, #4A00E0);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* BACKGROUND ANIMATION KEYFRAMES */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* HEADER STYLING */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: slideDown 1s ease-out;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px rgba(142, 45, 226, 0.7);
+}
+
+h1 span {
+    color: #00d2ff; /* Neon Blue Accent */
+}
+
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    border-bottom: 2px solid #00d2ff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+    color: #00d2ff;
+}
+
+/* GLASSMORPHISM CARD STYLING FOR SECTIONS */
+section {
+    background: rgba(255, 255, 255, 0.05); /* Very transparent */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px; /* Limits width on big screens */
+    margin-bottom: 25px;
+    padding: 25px;
+    text-align: center;
+    
+    transition: transform 0.3s ease;
+    animation: fadeIn 1.5s ease-out;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Floats up slightly on hover */
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 210, 255, 0.4);
+}
+
+/* PROFILE IMAGE STYLING */
+.profile img {
+    border-radius: 50%;
+    border: 4px solid #00d2ff;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+    margin-bottom: 15px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile img:hover {
+    transform: rotate(360deg);
+}
+
+.profile p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+/* LIST STYLING */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 50px; /* Pill shape */
+    display: inline-block; /* Allows items to sit next to each other if small */
+    width: 80%;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+/* Specific styling for list items on hover */
+li:hover {
+    background: #00d2ff;
+    color: #0f0c29;
+    font-weight: bold;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00d2ff;
+}
+
+/* LINKS STYLING */
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #00d2ff;
+    text-shadow: 0 0 5px #00d2ff;
+}
+
+/* FOOTER */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* ENTRY ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 600px) {
+    h1 { font-size: 1.8rem; }
+    section { padding: 15px; }
+    li { width: 100%; }
+}
