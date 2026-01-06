@@ -1,0 +1,19 @@
+*{
+    color: rgb(59, 99, 99);
+    background-color: bisque;
+}
+h3{
+    color: brown;
+}
+.a{
+    color: rgb(19, 20, 20);
+    background-color: rgb(43, 202, 226);
+}
+#signup{
+    background-color: rgb(109, 54, 54);
+    color: white
+}
+#login{
+    background-color: aquamarine;
+    color: rgb(31, 29, 29)
+}
