@@ -1,12 +1,15 @@
 *{
-    color: rgb(59, 99, 99);
-    background-color: bisque;
+    color: rgb(9, 9, 9);
+    background-color: rgb(223, 138, 130);
+}
+h1{
+    color: rgb(57, 19, 224);
 }
 h3{
     color: brown;
 }
 .a{
-    color: rgb(19, 20, 20);
+    color: rgb(0, 0, 0);
     background-color: rgb(43, 202, 226);
 }
 #signup{
@@ -16,4 +19,44 @@ h3{
 #login{
     background-color: aquamarine;
     color: rgb(31, 29, 29)
+}
+div >input{
+    background-color: rgb(5, 5, 5);
+    color: rgb(255, 255, 255);
+}
+input[type="text"]{
+    background-color: rgb(220, 82, 82);
+    color: rgb(255, 255, 255);
+}
+div[id="footer"]{
+    background-color: rgb(0, 0, 0);
+    color: rgb(193, 55, 55);
+    text-align: center;
+}
+div[id="footer"] p{
+    color:blueviolet
+}
+#login:hover{
+    background-color: rgb(219, 31, 49);
+    color: rgb(0, 0, 0);
+}
+#signup:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+#signup:active{
+    background-color: rgb(98, 43, 207);
+    color: rgb(255, 255, 255);
+} 
+p:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+h3:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+h3:active{
+    background-color: rgb(25, 139, 54);
+    color: rgb(255, 255, 255);
 }
