@@ -1,0 +1,25 @@
+*{
+    background-color: blanchedalmond;
+}
+div {
+    height: 200px;
+    width: 300px;
+   /* border-width: 5px;
+    border-style: double;
+    border-color: rgb(27, 120, 120);*/
+    background-color: rgb(193, 143, 240);
+    
+     border: 5px solid blue;
+     
+    
+}
+h1{
+     border: 5px solid blue;
+
+    border-left-color: black ;
+    border-right-color: brown;
+    border-top-color:aquamarine;
+    border-bottom-color: blueviolet;
+    border-radius: 20px;
+    border-top-right-radius: 5px;
+}
