@@ -1,4 +1,5 @@
 function avg(a ,b){
-    console.lof((a+b)/2)
+    return a+b;
 }
-console.log(avg(2,8))
+
+console.log(avg(a,b))
